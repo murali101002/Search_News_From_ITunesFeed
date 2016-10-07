@@ -39,9 +39,8 @@ public class GetJsonData extends AsyncTask<String,Void,ArrayList<Tunes>> {
     protected void onPreExecute() {
         super.onPreExecute();
         progressDialog = new ProgressDialog(activity.getContect());
-        progressDialog.setTitle("Loading News...");
+        progressDialog.setTitle("Loading Weather...");
         progressDialog.setCancelable(false);
-        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDialog.show();
     }
 

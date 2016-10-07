@@ -42,26 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         goButton.setOnClickListener(this);
         clearButton = (Button) findViewById(R.id.clear);
         clearButton.setOnClickListener(this);
-//        progressDialog = new ProgressDialog(this);
-//        progressDialog.setTitle("Loading News...");
-//        progressDialog.setCancelable(false);
-//        progressDialog.show();
         receivedData = new ArrayList<Tunes>();
         new GetJsonData(this).execute(url);
-        //progressDialog.dismiss();
-
-//
-//        try {
-////            tunesList = receivedData.get();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        } catch (ExecutionException e) {
-//            e.printStackTrace();
-//        }
-
-//        TunesArrayAdapter adapter = new TunesArrayAdapter(this, R.layout.custom_layout, tunesList);
-//        listView.setAdapter(adapter);
-//        adapter.setNotifyOnChange(true);
 
 
     }
